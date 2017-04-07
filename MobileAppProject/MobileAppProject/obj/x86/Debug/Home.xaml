@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="MobileAppProject.Home"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MobileAppProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollViewer Height="700">
+        <StackPanel Orientation="Vertical" Background="Black">
+
+            <Image x:ConnectionId='1'  Name="StoryImage" Source="Assets/StoryNIOH.png" Stretch="Uniform" Margin="10"                           />
+            <Image x:ConnectionId='2' Name="CharacterImage" Source="Assets/CharactersNIOH.png" Stretch="Uniform" Margin="10"                               />
+            <Image x:ConnectionId='3' Name="WeaponImage" Source="Assets/WeaponsNIOH.png" Stretch="Uniform" Margin="10"                            />
+            <Image x:ConnectionId='4' Name ="ArmorImage" Source="Assets/ArmorNIOH.png" Stretch="Uniform" Margin="10"                           />
+
+
+        </StackPanel>
+    </ScrollViewer>
+</Page>
+

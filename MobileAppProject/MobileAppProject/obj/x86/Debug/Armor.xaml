@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="MobileAppProject.Armor"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MobileAppProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Vertical" Background="Black">
+        <TextBlock Text="Armor " FontSize="48" Foreground="WhiteSmoke" Margin="10,0,0,20"/>
+        <TextBlock Text="Red Demon" FontSize="24" Foreground="WhiteSmoke" Margin="10,0,0,20"/>
+        <ScrollViewer Height="600">
+
+            <StackPanel Orientation="Horizontal">
+                <Grid MaxWidth ="425">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Margin="10,0,0,0"  TextWrapping="Wrap" Grid.Column="0" Grid.Row="0" Foreground="AliceBlue">Akaoni-no-Sankaku Spear is a reward for completing The Red Oni of the Ii sub mission
+Red Demon Armor: Kabuto is a reward for completing Demon Hunting sub mission
+Red Demon Armor: Do is a possible drop from Naomasa Ii in The Red Oni of the Ii sub mission
+Red Demon Armor: Kote is a reward for completing Demon Hunting sub mission
+Red Demon Armor: Hizayoroi is a possible drop from Naomasa Ii in The Red Oni of the Ii sub mission
+Red Demon Armor: Suneate is a possible drop from Naomasa Ii in The Red Oni of the Ii sub mission
+Can drop from Revenants of players who have acquired pieces of this Set.
+Smithing Text: The Red Oni Of The Li Boss</TextBlock>
+                    <Image Source="Assets/Armor.png" Grid.Column="1" Height="250" Margin="20,0,0,0" VerticalAlignment="Top" Stretch="Uniform"/>
+
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </StackPanel>
+</Page>
+

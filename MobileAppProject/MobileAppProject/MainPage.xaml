@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="MobileAppProject.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MobileAppProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" 
+    Loaded="Page_Loaded">
+
+
+    <StackPanel Background="Black">
+
+        <RelativePanel Height="Auto" Background="Black">
+            <Image  Name="NioH" RelativePanel.AlignLeftWithPanel="True" Source="Assets/NiohLogo.png" Height="75" Width="75" Stretch="Uniform" />
+            <Image Name="FLILOGO" RelativePanel.AlignRightWithPanel="True" Source="Assets/FLI_LOGO.png" Height="75" Width="75" Stretch="Uniform" Tapped="FLILOGO_Tapped"/>
+            <TextBlock Text="NioH Beginners Guide" Foreground="AntiqueWhite" RelativePanel.RightOf="NioH" RelativePanel.AlignVerticalCenterWith="NioH"/>
+        </RelativePanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Background="WhiteSmoke">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Button Name="Home" Content="Home" Click="Home_Button_Click" Margin="0,0,0,0" FontWeight="Bold"/>
+                <Button  Grid.Column="1"  Name="Story"  Content="Story" Click="Story_Button_Click" Margin="0,0,0,0" FontWeight="Bold"/>
+                <Button  Grid.Column="2" Name="Characters" Content="Characters" Click="Characters_Button_Click" Margin="0,0,0,0" FontWeight="Bold"/>
+                <Button  Grid.Column="3" Name="Weapons"  Content="Weapons" Click="Weapons_Button_Click" Margin="0,0,0,0" FontWeight="Bold"/>
+                <Button  Grid.Column="4" Name="Armor"   Content="Armor" Click="Armor_Button_Click" Margin="0,0,0,0" FontWeight="Bold"/>
+                <Button  Grid.Column="5" Name="AR"   Content="  AR  " Click="AR_Click" Margin="0,0,0,0" FontWeight="Bold"/>
+
+            </Grid>
+        </StackPanel>
+
+
+        <!-- Frame Used For Navagation-->
+        <Frame Name="myFrame">
+
+        </Frame>
+
+    </StackPanel>
+</Page>

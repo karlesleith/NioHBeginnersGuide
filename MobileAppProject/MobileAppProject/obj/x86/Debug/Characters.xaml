@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="MobileAppProject.Characters"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MobileAppProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Vertical" Background="Black">
+        <TextBlock Text="Characters " FontSize="48" Foreground="WhiteSmoke" Margin="10,0,0,20"/>
+        <TextBlock Text="William" FontSize="24" Foreground="WhiteSmoke" Margin="10,0,0,20"/>
+        <ScrollViewer Height="600">
+            
+            <StackPanel Orientation="Horizontal">
+                <Grid MaxWidth ="425">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Margin="10,0,0,0"  TextWrapping="Wrap" Grid.Column="0" Grid.Row="0" Foreground="AliceBlue">William is an Irish-born English Sailor. While still a boy, he lost both parents in the Irish war with England, but also met his Guardian Spirit Saoirse; the two have been inseparable ever since. Overcoming these early tragedies, William grew to be a strong and capable young man and threw in his lot with an English navy privateer-a pirate ship in all but name.</TextBlock>
+                    <Image Source="Assets/NiohWilliams.png" Grid.Column="1" Height="250" Margin="20,0,0,0" VerticalAlignment="Top" Stretch="Uniform"/>
+                    <TextBlock Foreground="AliceBlue" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" TextWrapping="Wrap" Margin="10,0,0,0"> Saoirse's special ability to locate powerful Amrita spirit-stones allowed him to flourish as a pirate for a time, but when he stumbled upon a secret military project to weaponize Amrita, he was imprisoned in the Tower of London.
+
+Just before William escaped the Tower of London, the alchemist Edward Kelley stole Saoirse from him. Determined to get Saoirse back, William followed Kelley doggedly across perilous seas all the way to Japan. But nothing he had heard about this fabled "country of gold" had prepared him for the realm of supernatural peril and death it proved to be.
+
+On Kelley's trail with Hattori Hanzo, William was favored with an audience with Hanzo's lord, Tokugawa Ieyasu. Although Ieyasu's deep karmic debt forced him to sacrifice much that was dear to him, he remained grimly determined to build a world without war. A question from Ieyasu led William to begin rethinking the meaning of his own power.</TextBlock>
+                  
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </StackPanel>
+</Page>
+

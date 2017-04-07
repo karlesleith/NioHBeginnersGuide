@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="MobileAppProject.Story"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MobileAppProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Vertical" Background="Black">
+        <TextBlock Text="Story " FontSize="48" Foreground="WhiteSmoke" Margin="10,0,0,20"/>
+        <ScrollViewer Height="600">
+            <StackPanel Orientation="Horizontal">
+                <Grid MaxWidth ="425">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Margin="10,0,0,0"  TextWrapping="Wrap" Grid.Column="0" Grid.Row="0" Foreground="AliceBlue">Nioh is set in 1600 within a fictionalised dark fantasy version of the late Sengoku period, a time when the clans of Japan were at war prior to the unification under the Tokugawa shogunate and the beginning of the Edo period. Amidst the fighting and high death toll, yokai</TextBlock>
+                    <Image Source="Assets/Nioh_cover_art.jpg" Grid.Column="1" Height="200" Margin="20,0,0,0" VerticalAlignment="Top" Stretch="Uniform"/>
+                    <TextBlock Foreground="AliceBlue" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" TextWrapping="Wrap" Margin="10,0,0,0">have appeared and begun wreaking havoc across the land: major yokai threats that appear in the game include Hinoenma, Jorōgumo, and a Yuki-onna born from the spirit of the wife of Oda Nobunaga following the Honnō-ji incident. The game's main protagonist is William, a blonde-haired Irishman who arrives in Japan in pursuit of an enemy. While there, he crosses paths with Tokugawa Ieyasu and his ninja servant Hattori Hanzo, forming an alliance against both William's enemy and the yokai infesting Japan. William is trained in combat by Yagyū Munetoshi, Hōzōin In'ei and Marume Nagayoshi. The main antagonist is Edward Kelley, a Westerner driving the conflict using his dark alchemical abilities under the order of John Dee, chief advisor to Queen Elizabeth I</TextBlock>
+                    <TextBlock Foreground="AliceBlue" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" TextWrapping="Wrap" Margin="10,10,0,0">William also crosses paths with numerous historical figures from the period: these include Ieyasu's allies Ii Naomasa and Honda Tadakatsu; daimyo Kuroda Yoshitaka and his son Kuroda Nagamasa; Ieyasu's main rival Ishida Mitsunari and his allies Shima Sakon and Ōtani Yoshitsugu; Tachibana Ginchiyo, head of the Tachibana clan, and her husband Muneshige; hostile mercenary Suzuki Magoichi; Yasuke, a former favored vassal of Nobunaga; and Tenkai, a monk of the Tiantai Buddhist sect and master manipulator of yin and yang magic. Original characters include Okatsu, a female ninja in Hanzō's clan who holds a dislike for William; and Fuku, Tenkai's disciple.</TextBlock>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </StackPanel>
+</Page>
+
